@@ -5,7 +5,7 @@ def solution(survey, choices):
     # 점수 측정
     for i in range(len(choices)):
         if survey[i] == 'RT' and choices[i] == 1:
-            score[0][0] += 3
+            score[0][0] += abs(choices[i] - 4)
         if survey[i] == 'RT' and choices[i] == 2:
             score[0][0] += 2
         if survey[i] == 'RT' and choices[i] == 3:
